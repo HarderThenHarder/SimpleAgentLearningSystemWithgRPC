@@ -1,0 +1,35 @@
+syntax = "proto3";
+
+service Simulator{
+    rpc getObservation(AgentIndex) returns (AgentObservation) {}
+    rpc render(UpdateCommand) returns (UpdateResult) {}
+    rpc step(StepCommand) returns (StepResult) {}
+    rpc reset(ResetCommand) returns (ResetResult) {}
+}
+
+message AgentIndex{
+    int32 idx = 1;
+}
+
+message AgentObservation{
+    int32 ObservationValue = 1;
+    int32 AgentPosX = 2;
+    int32 AgentPosY = 3;
+}
+
+message UpdateCommand{}
+
+message UpdateResult{}
+
+message StepCommand{
+    int32 action_idx = 1;
+}
+
+message StepResult{
+    float reward = 1;
+    bool terminal = 2;
+}
+
+message ResetCommand{}
+
+message ResetResult{}
