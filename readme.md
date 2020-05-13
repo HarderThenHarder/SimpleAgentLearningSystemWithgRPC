@@ -2,7 +2,7 @@
 
 ---
 
-#### 1. Introduction
+### 1. Introduction
 
 该demo以**机器人找寻钻石**的简单故事为背景，搭建了一套基于**DQN**的学习系统，Agent通过不断在迷宫中尝试新的行为，不断总结经验最终学习会如何在最短路径下找到钻石，避开火堆，效果如下（图左为DQN算法程序学习迭代的过程，图右是仿真端程序根据算法端选择行为进行场景更新和效用计算的过程）：
 
@@ -20,7 +20,7 @@
 
 <div align=center><img src="imgs/structure.png" width=700></div>
 
-#### 2. Usage
+### 2. Usage
 
 * clone该项目并安装所需要的依赖包：
 
