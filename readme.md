@@ -18,7 +18,7 @@
 
 该 Demo 设计框架如下，整个框架分为仿真端和算法端两大模块，仿真端负责运行并模拟整个游戏场景，包括Agent所需要的环境信息的计算、游戏场景状态如何根据Agent的行为决策进行更新、游戏画面绘制等；算法端负责根据一个Agent此刻的观测信息做出相应的行为决策，以及根据这个行为决策的回报效用来进行模型的自我更新和学习：
 
-<img src="imgs/structure.png" width=700>
+<div align=center><img src="imgs/structure.png" width=700></div>
 
 #### 2. Usage
 
